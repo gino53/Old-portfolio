@@ -1,0 +1,73 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;700&family=Stick+No+Bills:wght@200;400;700&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    /*========== FONT ==========*/
+    --text-font: 'Kanit', sans-serif;
+    --title-font: 'Stick No Bills', sans-serif;
+    /*========== COLOR ==========*/
+    --black: #24242d;
+    --purple: #ae4dd6;
+    --blue: #71cdea;
+}
+
+/*==================== BASE ====================*/
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: var(--black);
+}
+
+@keyframes flow {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+h1 {
+    animation: flow 30s ease-in-out infinite;
+    background: linear-gradient(38deg, var(--purple) 30%, var(--blue) 70%);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    padding: 0.625rem;
+}
+
+img {
+    width: 10%;
+}
+
+.menu {
+    display: flex;
+}
+
+lord-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
