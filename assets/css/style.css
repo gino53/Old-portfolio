@@ -13,32 +13,28 @@ html {
 
 body {
     background-color: #24242d;
+    overflow-x: hidden;
 }
 
 a {
     cursor: pointer;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /*********************************************************************/
 
-header {
-    position: absolute;
-    width: fit-content; 
-}
-
-.menu {
+.nav__menu {
+    position: fixed;
+    left: 10px;
+    top: 40px;
     width: 70px;
-    height: 300px;
-    margin-left: 0.625rem;
-    border-radius: 1.25rem;
-    background-color: rgba(255, 255, 255, .3);
-    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    -moz-backdrop-filter: blur(10px);
+    height: 350px;
 }
 
-.menu ul {
+.nav__menu ul {
     position: relative;
     display: flex;
     justify-content: center;
@@ -48,7 +44,7 @@ header {
     gap: 40px;
 }
 
-.menu-list {
+.nav__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,16 +54,52 @@ header {
     font-weight: 700;
 }
 
+.nav__item::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.nav__item:hover::after {
+    opacity: 1;
+}
+
+.active-link {
+    width: 70px;
+    height: 60px;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    transition: 0.5s;
+    z-index: -1;
+}
+
 /*********************************************************************/
+
+.section-1 {
+    height: 120vh;
+}
 
 .block-1 {
     display: flex;
     justify-content: center;
     height: 500px;
-    margin-top: 1.875rem;
 }
 
-.welcome {
+.home {
     height: 900px;
     padding: 3rem;
     border-radius: 1.25rem;
@@ -78,13 +110,121 @@ header {
     -moz-backdrop-filter: blur(10px);
 }
 
-.welcome-text {
+.home-text {
     color: #fff;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
 }
 
-.welcome-img {
+.block-1-img {
+    position: absolute;
+    width: 1200px;
+    z-index: -1;
+}
+
+/*********************************************************************/
+
+.section-2 {
+    height: 120vh;
+}
+
+.block-2 {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin-top: 1.875rem;
+}
+
+.skills {
+    height: 900px;
+    padding: 3rem;
+    border-radius: 1.25rem;
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+}
+
+.skills-text {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.block-2-img {
+    position: absolute;
+    width: 1200px;
+    z-index: -1;
+}
+
+/*********************************************************************/
+
+.section-3 {
+    height: 120vh;
+}
+
+.block-3 {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin-top: 1.875rem;
+}
+
+.projets {
+    height: 900px;
+    padding: 3rem;
+    border-radius: 1.25rem;
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+}
+
+.projets-text {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.block-3-img {
+    position: absolute;
+    width: 1200px;
+    z-index: -1;
+}
+
+/*********************************************************************/
+
+.section-4 {
+    height: 120vh;
+}
+
+.block-4 {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin-top: 1.875rem;
+}
+
+.contact {
+    height: 900px;
+    padding: 3rem;
+    border-radius: 1.25rem;
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+}
+
+.contact-text {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.block-4-img {
     position: absolute;
     width: 1200px;
     z-index: -1;
