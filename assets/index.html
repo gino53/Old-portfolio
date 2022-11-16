@@ -10,10 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
+    <div class="cursor"></div>
     <nav>
         <div class="nav__menu">
             <ul>
@@ -25,7 +27,7 @@
                 </li>
                 <li style="--i:0.1s">
                     <a class="nav__item active-link" href="#skills">
-                        <lord-icon src="https://cdn.lordicon.com/hbigeisx.json" trigger="hover" colors="primary:#ffffff"></lord-icon>
+                        <lord-icon src="https://cdn.lordicon.com/wluyqhxh.json" trigger="morph" colors="primary:#ffffff"></lord-icon>
                         <h4 class="menu-text">Skills</h4>
                     </a>
                 </li>
@@ -44,47 +46,62 @@
             </ul>
         </div>
     </nav>
-    <section class="section-1" id="home">
-        <div class="block-1">
-            <img class="block-1-img" src="img/figure.png" alt="art moderne">
-            <div class="home">
-                <h1 class="home-text">Bonjour, je suis Gino Castagna</h1>
-                <h1 class="home-text">Développeur Web front-end et back-end</h1>
-                <h1 class="home-text">Bienvenue sur mon portfolio</h1>
+    <div class="container">
+        <section class="section-1" id="home">
+            <div class="block-1">
+                <img class="block-1-img" src="img/figure.png" alt="art moderne">
+                <div class="home">
+                    <h1 class="home-text-1">Bonjour, je suis Gino Castagna</h1>
+                    <div class="profil-picture-container">
+                        <img class="profil-picture" src="img/profil.png" alt="Photo de profil">
+                    </div>
+                    <h1 class="home-text-2">Développeur Web</h1><br>
+                    <h1 class="home-text-3">Front-end et Back-end</h1><br>
+                    <h1 class="home-text-4">Bienvenue sur mon portfolio</h1>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="section-2" id="skills">
-        <div class="block-2">
-            <img class="block-2-img" src="img/figure2.png" alt="art moderne">
-            <div class="skills">
-                <h1 class="skills-text">Bonjour, je suis Gino Castagna</h1>
-                <h1 class="skills-text">Développeur Web front-end et back-end</h1>
-                <h1 class="skills-text">Bienvenue sur mon portfolio</h1>
+        </section>
+        <section class="section-2" id="skills">
+            <div class="block-2">
+                <img class="block-2-img" src="img/figure2.png" alt="art moderne">
+                <div class="skills">
+                    <h1 class="skills-text">Bonjour, je suis Gino Castagna</h1>
+                    <h1 class="skills-text">Développeur Web front-end et back-end</h1>
+                    <h1 class="skills-text">Bienvenue sur mon portfolio</h1>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="section-2" id="projets">
-        <div class="block-2">
-            <img class="block-3-img" src="img/figure3.png" alt="art moderne">
-            <div class="projets">
-                <h1 class="projets-text">Bonjour, je suis Gino Castagna</h1>
-                <h1 class="projets-text">Développeur Web front-end et back-end</h1>
-                <h1 class="projets-text">Bienvenue sur mon portfolio</h1>
+        </section>
+        <section class="section-3" id="projets">
+            <div class="block-3">
+                <img class="block-3-img" src="img/figure3.png" alt="art moderne">
+                <div class="projets">
+                    <h1 class="projets-text">Bonjour, je suis Gino Castagna</h1>
+                    <h1 class="projets-text">Développeur Web front-end et back-end</h1>
+                    <h1 class="projets-text">Bienvenue sur mon portfolio</h1>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="section-2" id="contact">
-        <div class="block-2">
-            <img class="block-4-img" src="img/figure4.png" alt="art moderne">
-            <div class="contact">
-                <h1 class="contact-text">Bonjour, je suis Gino Castagna</h1>
-                <h1 class="contact-text">Développeur Web front-end et back-end</h1>
-                <h1 class="contact-text">Bienvenue sur mon portfolio</h1>
+        </section>
+        <section class="section-4" id="contact">
+            <div class="block-4">
+                <img class="block-4-img" src="img/figure4.png" alt="art moderne">
+                <div class="contact">
+                    <h1 class="contact-text">Bonjour, je suis Gino Castagna</h1>
+                    <h1 class="contact-text">Développeur Web front-end et back-end</h1>
+                    <h1 class="contact-text">Bienvenue sur mon portfolio</h1>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </body>
 <script src="js/main.js"></script>
+<script type="text/javascript" src="js\vanilla-tilt.js"></script>
+<script>
+    	VanillaTilt.init(document.querySelector(".home"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 0.5,
 
+	});
+</script>
 </html>
