@@ -18,12 +18,7 @@ body {
 }
 
 a {
-    cursor: pointer;
-}
-
-a:hover,
-a:focus {
-    cursor: none;    
+    cursor: none;
 }
 
 .cursor {
@@ -31,13 +26,10 @@ a:focus {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, .3);
+    border: solid 2px rgba(255, 255, 255, .3);
     box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    -moz-backdrop-filter: blur(10px);
     pointer-events: none;
-    z-index: 2;
+    z-index: 10;
 }
 
 ::-webkit-scrollbar {
@@ -152,7 +144,10 @@ a:focus {
     border-radius: 1.25rem;
 }
 
-.home-text-1, .home-text-2, .home-text-3, .home-text-4 {
+.home-text-1,
+.home-text-2,
+.home-text-3,
+.home-text-4 {
     color: #fff;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
@@ -167,7 +162,11 @@ a:focus {
 }
 
 @media screen and (max-width: 1270px) {
-    .home-text-1, .home-text-2, .home-text-3, .home-text-4 {
+
+    .home-text-1,
+    .home-text-2,
+    .home-text-3,
+    .home-text-4 {
         text-align: center;
         margin: 0;
     }
@@ -186,7 +185,6 @@ a:focus {
 .block-2 {
     display: flex;
     justify-content: center;
-    margin-top: 1.875rem;
 }
 
 .block-2-img {
@@ -196,7 +194,9 @@ a:focus {
 }
 
 .skills {
-    height: 900px;
+    position: relative;
+    top: 200px;
+    height: 700px;
     padding: 3rem;
     border-radius: 1.25rem;
     border-top: 1px solid rgba(255, 255, 255, .3);
@@ -208,10 +208,216 @@ a:focus {
     -moz-backdrop-filter: blur(10px);
 }
 
-.skills-text {
+.title {
     color: #fff;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.skills__content {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows:  repeat(2, 180px);
+    grid-column-gap: 50px;
+    grid-row-gap: 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skills__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.skills__info:hover {
+    transform: scale(110%);
+    transition: 0.5s;
+}
+
+.skills__name {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skills__bar {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    margin: 10px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background: #fff;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 1.25rem;
+    background: #24242d;
+}
+
+#html, #css, #mongodb {
+    width: 90%;
+}
+
+#angular {
+    width: 75%;
+}
+
+#javascript {
+    width: 70%;
+}
+
+#git {
+    width: 60%;
+}
+
+#html::before {
+    background: linear-gradient(90deg, #FFB74D, #FF9800, #F57C00, #E65100, #FFB74D, #FF9800, #F57C00, #E65100, #FFB74D);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+}
+
+#html::after {
+    background: linear-gradient(90deg, #FFB74D, #FF9800, #F57C00, #E65100, #FFB74D, #FF9800, #F57C00, #E65100, #FFB74D);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+#css::before {
+    background: linear-gradient(90deg, #42A5F5, #2196F3, #1976D2, #1565C0, #42A5F5, #2196F3, #1976D2, #1565C0, #42A5F5);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+}
+
+#css::after {
+    background: linear-gradient(90deg, #42A5F5, #2196F3, #1976D2, #1565C0, #42A5F5, #2196F3, #1976D2, #1565C0, #42A5F5);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+#angular::before {
+    background: linear-gradient(90deg, #E57373, #F44336, #D32F2F, #B71C1C, #E57373, #F44336, #D32F2F, #B71C1C, #E57373);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+}
+
+#angular::after {
+    background: linear-gradient(90deg, #E57373, #F44336, #D32F2F, #B71C1C, #E57373, #F44336, #D32F2F, #B71C1C, #E57373);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+#javascript::before {
+    background: linear-gradient(90deg, #FFF176, #FFEB3B, #FFEA00, #FFD600, #FFF176, #FFEB3B, #FFEA00, #FFD600, #FFF176);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+} 
+
+#javascript::after {
+    background: linear-gradient(90deg, #FFF176, #FFEB3B, #FFEA00, #FFD600, #FFF176, #FFEB3B, #FFEA00, #FFD600, #FFF176);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+} 
+
+#mongodb::before {
+    background: linear-gradient(90deg, #66BB6A, #4CAF50, #388E3C, #2E7D32, #66BB6A, #4CAF50, #388E3C, #2E7D32, #66BB6A);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+}
+
+#mongodb::after {
+    background: linear-gradient(90deg, #66BB6A, #4CAF50, #388E3C, #2E7D32, #66BB6A, #4CAF50, #388E3C, #2E7D32, #66BB6A);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+} 
+
+#git::before {
+    background: linear-gradient(90deg, #E57373, #F44336, #D32F2F, #B71C1C, #E57373, #F44336, #D32F2F, #B71C1C, #E57373);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+}
+
+#git::after {
+    background: linear-gradient(90deg, #E57373, #F44336, #D32F2F, #B71C1C, #E57373, #F44336, #D32F2F, #B71C1C, #E57373);
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    0% {
+        background-position: 500% 0;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    
+    .skills {
+        top: 100px;
+        height: 1000px;
+    }
+
+    .skills__content {
+        grid-template-columns: repeat(2, 180px);
+        grid-template-rows:  repeat(3, 180px);
+    }
 }
 
 /*********************************************************************/
