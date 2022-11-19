@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
     <link rel="shortcut icon" href="img/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <title>Portfolio</title>
 </head>
 
@@ -32,7 +34,7 @@
                     </a>
                 </li>
                 <li style="--i:0.2s">
-                    <a class="nav__item active-link" href="#projets">
+                    <a class="nav__item active-link" href="#projects">
                         <lord-icon src="https://cdn.lordicon.com/kipaqhoz.json" trigger="morph" colors="primary:#ffffff"></lord-icon>
                         <h4 class="menu-text">Projets</h4>
                     </a>
@@ -68,76 +70,104 @@
                     <h1 class="title">Skills</h1>
                     <div class="skills__content">
                         <div class="skills__info">
-                            <div class="skills__info left">
-                                <img src="img/logo/html.png" alt="HTML Logo">
-                                <h3 class="skills__name">HTML</h3>
-                                <div class="skills__bar">
-                                 <div class="progress" id="html"></div>
-                                </div>
-                                <h3 class="skills__name">90%</h3>
+                            <img src="img/logo/html.png" alt="HTML Logo" class="bottom">
+                            <h3 class="skills__name">HTML</h3>
+                            <div class="skills__bar">
+                                <div class="progress" id="html"></div>
                             </div>
+                            <h3 class="skills__name">90%</h3>
                         </div>
                         <div class="skills__info">
-                            <div class="skills__info right">
-                                <img src="img/logo/css.png" alt="CSS Logo">
-                                <h3 class="skills__name">CSS</h3>
-                                <div class="skills__bar">
-                                    <div class="progress" id="css"></div>
-                                </div>
-                                <h3 class="skills__name">90%</h3>
+                            <img src="img/logo/css.png" alt="CSS Logo" class="bottom">
+                            <h3 class="skills__name">CSS</h3>
+                            <div class="skills__bar">
+                                <div class="progress" id="css"></div>
                             </div>
+                            <h3 class="skills__name">90%</h3>
                         </div>
                         <div class="skills__info">
-                            <div class="skills__info left">
-                                <img src="img/logo/angular.png" alt="Angular Logo">
-                                <h3 class="skills__name">Angular</h3>
-                                <div class="skills__bar">
-                                    <div class="progress" id="angular"></div>
-                                </div>
-                                <h3 class="skills__name">75%</h3>
+                            <img src="img/logo/angular.png" alt="Angular Logo" class="bottom">
+                            <h3 class="skills__name">Angular</h3>
+                            <div class="skills__bar">
+                                <div class="progress" id="angular"></div>
                             </div>
+                            <h3 class="skills__name">80%</h3>
                         </div>
                         <div class="skills__info">
-                            <div class="skills__info right">
-                                <img src="img/logo/javascript.png" alt="JavaScript Logo">
-                                <h3 class="skills__name">JavaScript</h3>
-                                <div class="skills__bar">
-                                    <div class="progress" id="javascript"></div>
-                                </div>
-                                <h3 class="skills__name">70%</h3>
+                            <img src="img/logo/javascript.png" alt="JavaScript Logo" class="bottom">
+                            <h3 class="skills__name">JavaScript</h3>
+                            <div class="skills__bar">
+                                <div class="progress" id="javascript"></div>
                             </div>
+                            <h3 class="skills__name">75%</h3>
                         </div>
                         <div class="skills__info">
-                            <div class="skills__info left">
-                                <img src="img/logo/mongodb.png" alt="MongoDB Logo">
-                                <h3 class="skills__name">MongoDB</h3>
-                                <div class="skills__bar">
-                                    <div class="progress" id="mongodb"></div>
-                                </div>
-                                <h3 class="skills__name">90%</h3>
+                            <img src="img/logo/mongodb.png" alt="MongoDB Logo" class="bottom">
+                            <h3 class="skills__name">MongoDB</h3>
+                            <div class="skills__bar">
+                                <div class="progress" id="mongodb"></div>
                             </div>
+                            <h3 class="skills__name">85%</h3>
                         </div>
                         <div class="skills__info">
-                            <div class="skills__info right">
-                                <img src="img/logo/git.png" alt="Git Logo">
-                                <h3 class="skills__name">Git</h3>
-                                <div class="skills__bar">
-                                    <div class="progress" id="git"></div>
-                                </div>
-                                <h3 class="skills__name">60%</h3>
+                            <img src="img/logo/git.png" alt="Git Logo" class="bottom">
+                            <h3 class="skills__name">Git</h3>
+                            <div class="skills__bar">
+                                <div class="progress" id="git"></div>
                             </div>
+                            <h3 class="skills__name">60%</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-3" id="projets">
+        <section class="section-3" id="projects">
             <div class="block-3">
                 <img class="block-3-img" src="img/figure3.png" alt="art moderne">
-                <div class="projets">
-                    <h1 class="projets-text">Bonjour, je suis Gino Castagna</h1>
-                    <h1 class="projets-text">Développeur Web front-end et back-end</h1>
-                    <h1 class="projets-text">Bienvenue sur mon portfolio</h1>
+                <div class="projects">
+                    <h1 class="title">Projets</h1>
+                    <div class="projects__container swiper">
+                        <div class="swiper-wrapper">
+                            <div class="projects__content swiper-slide">
+                                <span class="projects__title">Booki</span>
+                                <img src="img/projects/project-1.png" alt="Project Booki" class="projects__img">
+                                <h3 class="projects__subtitle">Transformer une maquette en site web avec HTML et CSS</h3>
+                            </div>
+                            <div class="projects__content swiper-slide">
+                                <span class="projects__title">OhMyFood</span>
+                                <img src="img/projects/project-2.png" alt="Project Booki" class="projects__img">
+                                <h3 class="projects__subtitle">Dynamiser une page web avec des animations CSS</h3>
+                            </div>
+                            <div class="projects__content swiper-slide">
+                                <span class="projects__title">La Panthère</span>
+                                <img src="img/projects/project-3.png" alt="Project Booki" class="projects__img">
+                                <h3 class="projects__subtitle">Optimiser un site web existant</h3>
+                            </div>
+                            <div class="projects__content swiper-slide">
+                                <span class="projects__title">Kanap</span>
+                                <img src="img/projects/project-4.png" alt="Project Booki" class="projects__img">
+                                <h3 class="projects__subtitle">Construire un site e-commerce en JavaScript</h3>
+                            </div>
+                            <div class="projects__content swiper-slide">
+                                <span class="projects__title">HotTakes</span>
+                                <img src="img/projects/project-5.png" alt="Project Booki" class="projects__img">
+                                <h3 class="projects__subtitle">Construire une API sécurisée pour une application d'avis gastronomique</h3>
+                            </div>
+                            <div class="projects__content swiper-slide">
+                                <span class="projects__title">Groupomania</span>
+                                <img src="img/projects/project-6.png" alt="Project Booki" class="projects__img">
+                                <h3 class="projects__subtitle">Créer un réseau social d'entreprise</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <lord-icon src="https://cdn.lordicon.com/xsdtfyne.json" trigger="click" state="hover-2" style="transform: rotate(90deg);width:50px;height:50px" colors="primary:#ffffff"></lord-icon>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <lord-icon src="https://cdn.lordicon.com/xsdtfyne.json" trigger="click" state="hover-2" style="transform: rotate(-90deg);width:50px;height:50px" colors="primary:#ffffff"></lord-icon>
+                        </div>
+                        
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -156,11 +186,16 @@
 <script src="js/main.js"></script>
 <script type="text/javascript" src="js\vanilla-tilt.js"></script>
 <script>
-    	VanillaTilt.init(document.querySelector(".home"), {
+    VanillaTilt.init(document.querySelector(".home"), {
 		max: 25,
 		speed: 400,
         glare: true,
         "max-glare": 0.5,
+	});
+
+    VanillaTilt.init(document.querySelectorAll(".skills__info"), {
+		max: 55,
+		speed: 400
 	});
 </script>
 </html>

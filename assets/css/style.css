@@ -214,7 +214,7 @@ a {
     font-weight: 700;
     text-align: center;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .skills__content {
@@ -232,12 +232,6 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: 0.5s;
-}
-
-.skills__info:hover {
-    transform: scale(110%);
-    transition: 0.5s;
 }
 
 .skills__name {
@@ -267,16 +261,20 @@ a {
     background: #24242d;
 }
 
-#html, #css, #mongodb {
+#html, #css {
     width: 90%;
 }
 
+#mongodb {
+    width: 85%;
+}
+
 #angular {
-    width: 75%;
+    width: 80%;
 }
 
 #javascript {
-    width: 70%;
+    width: 75%;
 }
 
 #git {
@@ -439,7 +437,8 @@ a {
     transform: rotate(90deg);
 }
 
-.projets {
+.projects {
+    width: 90%;
     height: 900px;
     padding: 3rem;
     border-radius: 1.25rem;
@@ -452,10 +451,74 @@ a {
     -moz-backdrop-filter: blur(10px);
 }
 
-.projets-text {
+.projects__container {
+    overflow: initial;
+}
+
+.projects__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects__img {
+   width: 250px;
+   border-radius: 1rem;
+   margin-bottom: 1rem;
+}
+
+.projects__title {
     color: #fff;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.625rem;
+}
+
+.projects__subtitle {
+    margin: 0.5rem 0 1.25rem;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.projects__container .swiper-button-prev::after,
+.projects__container .swiper-button-next::after {
+    content: '';
+}
+
+.projects__container .swiper-button-prev,
+.projects__container .swiper-button-next {
+    width: initial;
+    height: initial;
+    margin: initial;
+}
+
+.projects__container .swiper-button-prev {
+    top: 130px;
+    left: -0.25rem;
+    cursor: none;
+}
+
+.projects__container .swiper-button-next {
+    top: 130px;
+    right: -0.25rem;
+    cursor: none;
+}
+
+.projects__container .swiper-slide {
+    margin-bottom: 4.5rem;
+}
+
+.projects__container .swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: initial;
+}
+
+.projects__container .swiper-pagination-bullet-active {
+    background-color: #24242d;
 }
 
 /*********************************************************************/
