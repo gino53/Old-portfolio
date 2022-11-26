@@ -43,22 +43,47 @@ sr.reveal(`.left`, { delay: 700, origin: 'left', interval: 200 });
 sr.reveal(`.bottom`, { delay: 700, origin: 'bottom', interval: 200 });
 
 /*=============== SWIPER ===============*/
-let swiperProjects = new Swiper(".projects__container", {
+let swiperProjects = new Swiper('.projects__container', {
 	loop: true,
 	spaceBetween: 24,
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
 	pagination: {
-		el: ".swiper-pagination"
+		el: '.swiper-pagination'
 	},
 	breakpoints: {
 		1200: {
 			slidesPerView: 2,
 			spaceBetween: -50
 		}
-	},
-	mousewheel: true,
-	keyboard: true
+	}
 });
+
+/*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+	contactEmail = document.getElementById('contact-email'),
+	contactMessage = document.getElementById('contact-message'),
+	contactAlert = document.querySelector('.contact__alert')
+
+const sendEmail = (e) => {
+	e.preventDefault();
+
+	if(contactEmail.value === '' || contactMessage.value === '') {
+	} else {
+		emailjs.sendForm('service_3tw347m','template_86ar4oz', '#contact-form', 'U4Gw4uXEQulSdIF4g')
+			.then(() => {
+				contactAlert.textContent = 'Message sent';
+
+				setTimeout(() => {
+					contactAlert.textContent = '';
+				}, 5000)
+			}, (error) => {
+				alert('ERROR', error);
+			});
+		contactEmail.value = '';
+		contactMessage.value = '';
+	};
+};
+contactForm.addEventListener('submit', sendEmail);

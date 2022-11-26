@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
     <link rel="shortcut icon" href="img/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <title>Portfolio</title>
 </head>
 
@@ -125,7 +126,7 @@
             <div class="block-3">
                 <img class="block-3-img" src="img/figure3.png" alt="art moderne">
                 <div class="projects">
-                    <h1 class="title">Projets</h1>
+                    <h1 class="title2">Projets</h1>
                     <div class="projects__container swiper">
                         <div class="swiper-wrapper">
                             <div class="projects__content swiper-slide">
@@ -165,7 +166,6 @@
                         <div class="swiper-button-prev">
                             <lord-icon src="https://cdn.lordicon.com/xsdtfyne.json" trigger="click" state="hover-2" style="transform: rotate(-90deg);width:50px;height:50px" colors="primary:#ffffff"></lord-icon>
                         </div>
-                        
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
@@ -175,9 +175,29 @@
             <div class="block-4">
                 <img class="block-4-img" src="img/figure4.png" alt="art moderne">
                 <div class="contact">
-                    <h1 class="contact-text">Bonjour, je suis Gino Castagna</h1>
-                    <h1 class="contact-text">Développeur Web front-end et back-end</h1>
-                    <h1 class="contact-text">Bienvenue sur mon portfolio</h1>
+                    <h1 class="title">Cont<lord-icon src="https://cdn.lordicon.com/diihvcfp.json" trigger="loop" delay="1000" colors="primary:#121331" style="padding-top: 4px;"></lord-icon>ctez Moi</h1>
+                        <div class="contact__content">
+                            <form action="" class="contact__form" id="contact-form">
+                                <div class="contact__form__input">
+                                    <input type="mail" required id="contact-email" name="user_email"></input>
+                                    <span class="center">Email</span>
+                                    <i></i>
+                                </div>
+                                <div class="contact__form__input">
+                                    <textarea type="text" required id="contact-message" name="user_message"></textarea>
+                                    <span class="center">Message</span>
+                                    <i class="textarea"></i>
+                                </div>
+                                <div class="center">
+                                    <button type="submit" class="button">
+                                        <span>
+                                            <img src="img/icons8-send-32.png" alt="" class="icon">
+                                        </span>
+                                        <span class="send">Envoyer</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                 </div>
             </div>
         </section>

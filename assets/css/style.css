@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-color: #24242d;
+    background-color: #24242D;
     overflow-x: hidden;
     cursor: none;
 }
@@ -121,6 +121,7 @@ a {
     position: relative;
     top: 300px;
     width: 70%;
+    max-width: 1000px;
     height: 550px;
     padding: 3rem;
     border-radius: 1.25rem;
@@ -148,7 +149,7 @@ a {
 .home-text-2,
 .home-text-3,
 .home-text-4 {
-    color: #fff;
+    color: #24242D;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
 }
@@ -209,7 +210,7 @@ a {
 }
 
 .title {
-    color: #fff;
+    color: #24242D;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     text-align: center;
@@ -220,7 +221,7 @@ a {
 .skills__content {
     display: grid;
     grid-template-columns: repeat(3, 180px);
-    grid-template-rows:  repeat(2, 180px);
+    grid-template-rows: repeat(2, 180px);
     grid-column-gap: 50px;
     grid-row-gap: 100px;
     justify-items: center;
@@ -235,7 +236,7 @@ a {
 }
 
 .skills__name {
-    color: #fff;
+    color: #24242D;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     text-align: center;
@@ -258,10 +259,11 @@ a {
     left: 0;
     height: 100%;
     border-radius: 1.25rem;
-    background: #24242d;
+    background: #24242D;
 }
 
-#html, #css {
+#html,
+#css {
     width: 90%;
 }
 
@@ -345,7 +347,7 @@ a {
     inset: 0;
     animation: animate 20s linear infinite;
     background-size: 500%;
-} 
+}
 
 #javascript::after {
     background: linear-gradient(90deg, #FFF176, #FFEB3B, #FFEA00, #FFD600, #FFF176, #FFEB3B, #FFEA00, #FFD600, #FFF176);
@@ -355,7 +357,7 @@ a {
     animation: animate 20s linear infinite;
     background-size: 500%;
     filter: blur(20px);
-} 
+}
 
 #mongodb::before {
     background: linear-gradient(90deg, #66BB6A, #4CAF50, #388E3C, #2E7D32, #66BB6A, #4CAF50, #388E3C, #2E7D32, #66BB6A);
@@ -374,7 +376,7 @@ a {
     animation: animate 20s linear infinite;
     background-size: 500%;
     filter: blur(20px);
-} 
+}
 
 #git::before {
     background: linear-gradient(90deg, #E57373, #F44336, #D32F2F, #B71C1C, #E57373, #F44336, #D32F2F, #B71C1C, #E57373);
@@ -406,7 +408,7 @@ a {
 }
 
 @media screen and (max-width: 1270px) {
-    
+
     .skills {
         top: 100px;
         height: 1000px;
@@ -414,7 +416,7 @@ a {
 
     .skills__content {
         grid-template-columns: repeat(2, 180px);
-        grid-template-rows:  repeat(3, 180px);
+        grid-template-rows: repeat(3, 180px);
     }
 }
 
@@ -434,12 +436,14 @@ a {
     position: absolute;
     width: 1200px;
     z-index: -1;
-    transform: rotate(90deg);
 }
 
 .projects {
+    position: relative;
+    top: 200px;
     width: 90%;
-    height: 900px;
+    max-width: 1300px;
+    height: 800px;
     padding: 3rem;
     border-radius: 1.25rem;
     border-top: 1px solid rgba(255, 255, 255, .3);
@@ -451,8 +455,17 @@ a {
     -moz-backdrop-filter: blur(10px);
 }
 
+.title2 {
+    color: #24242D;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+}
+
 .projects__container {
     overflow: initial;
+    top: 100px;
 }
 
 .projects__content {
@@ -463,22 +476,24 @@ a {
 }
 
 .projects__img {
-   width: 250px;
-   border-radius: 1rem;
-   margin-bottom: 1rem;
-}
-
-.projects__title {
-    color: #fff;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 1rem;
+    margin-top: 0.625rem;
     margin-bottom: 0.625rem;
 }
 
+.projects__title {
+    color: #24242D;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
 .projects__subtitle {
+    width: 50%;
     margin: 0.5rem 0 1.25rem;
-    color: #fff;
+    color: #24242D;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     text-align: center;
@@ -509,7 +524,7 @@ a {
 }
 
 .projects__container .swiper-slide {
-    margin-bottom: 4.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .projects__container .swiper-pagination-bullet {
@@ -518,7 +533,10 @@ a {
 }
 
 .projects__container .swiper-pagination-bullet-active {
-    background-color: #24242d;
+    width: 20px;
+    border-radius: 1rem;
+    background-color: #24242D;
+    transition: 0.5s;
 }
 
 /*********************************************************************/
@@ -540,7 +558,10 @@ a {
 }
 
 .contact {
-    height: 900px;
+    position: relative;
+    top: 200px;
+    width: 800px;
+    height: 800px;
     padding: 3rem;
     border-radius: 1.25rem;
     border-top: 1px solid rgba(255, 255, 255, .3);
@@ -552,8 +573,216 @@ a {
     -moz-backdrop-filter: blur(10px);
 }
 
-.contact-text {
-    color: #fff;
+.contact__form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.contact__form__input {
+    position: relative;
+    width: 100%;
+}
+
+.contact__form__input input {
+    position: relative;
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #24242D;
+    font-size: 1.25rem;
+    z-index: 2;
+    cursor: none;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+}
+
+.contact__form__input textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #24242D;
+    font-size: 1.25rem;
+    z-index: 2;
+    cursor: none;
+    resize: none;
+}
+
+.contact__form__input span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.5s;
+    color: #24242D;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.contact__form__input input:valid~span,
+.contact__form__input input:focus~span {
+    transform: translateY(32px) translateX(-335px);
+}
+
+.contact__form__input textarea:valid~span,
+.contact__form__input textarea:focus~span {
+    transform: translateY(32px) translateX(-325px);
+}
+
+.contact__form__input i,
+.textarea {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: #24242D;
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.contact__form__input i {
+    width: 100%;
+}
+
+.contact__form__input .textarea {
+    width: 100%;
+}
+
+.contact__form__input input:valid~i,
+.contact__form__input input:focus~i {
+    height: 100%;
+    background: none;
+}
+
+.contact__form__input textarea:valid~i,
+.contact__form__input textarea:focus~i {
+    height: 100%;
+    background: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 3.75rem;
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    cursor: none;
+    transition: 0.5s;
+}
+
+.button:hover {
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 3.75rem;
+    background-color: rgba(255, 255, 255, .3);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.button:hover::before {
+    opacity: 1;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 3.75rem;
+    background-color: rgba(255, 255, 255, .3);
+    transition: 0.5s;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0;
+}
+
+.button:hover::after {
+    opacity: 0.5;
+}
+
+.icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+.button:hover .icon {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.button span {
+    position: absolute;
+}
+
+.button .send {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #24242D;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.button:hover .send {
+    transform: scale(1);
+    transition-delay: 0.25s;
+}
+
+.send {
+    color: #24242D;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1270px) {
+    .contact {
+        width: 400px;
+    }
+
+    .contact__form__input input:valid~span,
+    .contact__form__input input:focus~span {
+        transform: translateY(32px) translateX(-135px);
+    }
+
+    .contact__form__input textarea:valid~span,
+    .contact__form__input textarea:focus~span {
+        transform: translateY(32px) translateX(-125px);
+    }
 }
