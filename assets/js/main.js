@@ -36,8 +36,8 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home, .skills, .projects, .contact`, { delay: 600, origin: 'top' });
 sr.reveal(`.profil-picture`, { delay: 1000, origin: 'bottom' });
-sr.reveal(`.block-1-img, .block-2-img, .block-3-img, .block-4-img`, { delay: 700, origin: 'right' });
-sr.reveal(`.home-text-1, .home-text-2, .home-text-3, .home-text-4, .title`, { delay: 700, origin: 'left', interval: 200 });
+sr.reveal(`.block-1-img, .block-2-img, .block-3-img, .block-4-img, .right`, { delay: 700, origin: 'right' });
+sr.reveal(`.home-text-1, .title`, { delay: 700, origin: 'left', interval: 200 });
 sr.reveal(`.progress`, { delay: 700, origin: 'left', duration: 4000, distance: '140px' });
 sr.reveal(`.left`, { delay: 700, origin: 'left', interval: 200 });
 sr.reveal(`.bottom`, { delay: 700, origin: 'bottom', interval: 200 });
@@ -52,12 +52,6 @@ let swiperProjects = new Swiper('.projects__container', {
 	},
 	pagination: {
 		el: '.swiper-pagination'
-	},
-	breakpoints: {
-		1200: {
-			slidesPerView: 2,
-			spaceBetween: -50
-		}
 	}
 });
 
