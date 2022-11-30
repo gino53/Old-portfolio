@@ -34,13 +34,12 @@ const sr = ScrollReveal({
 	delay: 400
 })
 
-sr.reveal(`.home, .skills, .projects, .contact`, { delay: 600, origin: 'top' });
-sr.reveal(`.profil-picture`, { delay: 1000, origin: 'bottom' });
-sr.reveal(`.block-1-img, .block-2-img, .block-3-img, .block-4-img, .right`, { delay: 700, origin: 'right' });
-sr.reveal(`.home-text-1, .title`, { delay: 700, origin: 'left', interval: 200 });
-sr.reveal(`.progress`, { delay: 700, origin: 'left', duration: 4000, distance: '140px' });
-sr.reveal(`.left`, { delay: 700, origin: 'left', interval: 200 });
+sr.reveal(`.top`, { delay: 500, origin: 'top' });
 sr.reveal(`.bottom`, { delay: 700, origin: 'bottom', interval: 200 });
+sr.reveal(`.right`, { delay: 700, origin: 'right' });
+sr.reveal(`.left`, { delay: 700, origin: 'left' });
+sr.reveal(`.figure-1, .figure-2, .figure-3, .figure-4`, { delay: 600, origin: 'right' });
+sr.reveal(`.progress`, { delay: 700, origin: 'left', duration: 4000, distance: '140px' });
 
 /*=============== SWIPER ===============*/
 let swiperProjects = new Swiper('.projects__container', {
