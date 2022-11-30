@@ -38,6 +38,7 @@ sr.reveal(`.top`, { delay: 500, origin: 'top' });
 sr.reveal(`.bottom`, { delay: 700, origin: 'bottom', interval: 200 });
 sr.reveal(`.right`, { delay: 700, origin: 'right' });
 sr.reveal(`.left`, { delay: 700, origin: 'left' });
+sr.reveal(`.nav__menu`, { delay: 700, origin: 'bottom', interval: 200 });
 sr.reveal(`.figure-1, .figure-2, .figure-3, .figure-4`, { delay: 600, origin: 'right' });
 sr.reveal(`.progress`, { delay: 700, origin: 'left', duration: 4000, distance: '140px' });
 
