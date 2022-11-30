@@ -721,11 +721,11 @@ h1 {
 
     .contact__form__input input:valid~span,
     .contact__form__input input:focus~span {
-        transform: translateY(32px) translateX(-130px);
+        transform: translateY(32px) translateX(-145px);
     }
 
     .contact__form__input textarea:valid~span,
     .contact__form__input textarea:focus~span {
-        transform: translateY(32px) translateX(-120px);
+        transform: translateY(32px) translateX(-135px);
     }
 }
