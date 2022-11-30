@@ -21,6 +21,10 @@ a {
     cursor: none;
 }
 
+section {
+    height: 100vh;
+}
+
 .cursor {
     position: absolute;
     width: 40px;
@@ -38,9 +42,14 @@ a {
 
 /*********************************************************************/
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav__menu {
     position: fixed;
-    left: 50%;
     bottom: -150px;
     width: 70px;
     height: 350px;
@@ -102,10 +111,6 @@ a {
 
 /*********************************************************************/
 
-.section-1 {
-    height: 100vh;
-}
-
 .block-1 {
     display: flex;
     justify-content: center;
@@ -162,10 +167,6 @@ a {
 
 /*********************************************************************/
 
-.section-2 {
-    height: 100vh;
-}
-
 .block-2 {
     display: flex;
     justify-content: center;
@@ -176,7 +177,7 @@ a {
     position: absolute;
     width: 1200px;
     z-index: -1;
-    margin-top: 400px;
+    margin-top: 350px;
 }
 
 .skills {
@@ -426,10 +427,6 @@ a {
 
 /*********************************************************************/
 
-.section-3 {
-    height: 100vh;
-}
-
 .block-3 {
     display: flex;
     justify-content: center;
@@ -568,10 +565,6 @@ a {
 }
 
 /*********************************************************************/
-
-.section-4 {
-    height: 100vh;
-}
 
 .block-4 {
     display: flex;
