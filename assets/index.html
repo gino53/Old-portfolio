@@ -19,32 +19,32 @@
 
 <body>
     <div class="cursor"></div>
-    <nav>
+    <nav class="center">
         <div class="nav__menu">
             <ul>
                 <li style="--i:0.1s">
-                    <a class="nav__item" href="#home">
+                    <a class="nav__item center" href="#home">
                         <lord-icon src="https://cdn.lordicon.com/osuxyevn.json" trigger="morph" state="morph-2"
                             colors="primary:#ffffff"></lord-icon>
-                        <h4 class="menu-text">Home</h4>
+                        <h4>Home</h4>
                     </a>
                 </li>
                 <li style="--i:0.1s">
-                    <a class="nav__item" href="#skills">
+                    <a class="nav__item center" href="#skills">
                         <lord-icon src="https://cdn.lordicon.com/wluyqhxh.json" trigger="morph"
                             colors="primary:#ffffff"></lord-icon>
                         <h4 class="menu-text">Skills</h4>
                     </a>
                 </li>
                 <li style="--i:0.2s">
-                    <a class="nav__item" href="#projects">
+                    <a class="nav__item center" href="#projects">
                         <lord-icon src="https://cdn.lordicon.com/kipaqhoz.json" trigger="morph"
                             colors="primary:#ffffff"></lord-icon>
                         <h4 class="menu-text">Projets</h4>
                     </a>
                 </li>
                 <li style="--i:0.3s">
-                    <a class="nav__item" href="#contact">
+                    <a class="nav__item center" href="#contact">
                         <lord-icon src="https://cdn.lordicon.com/hpivxauj.json" trigger="hover"
                             colors="primary:#ffffff"></lord-icon>
                         <h4 class="menu-text">Contact</h4>
@@ -54,121 +54,121 @@
         </div>
     </nav>
     <div class="container">
-        <section class="section-1" id="home">
-            <div class="block-1">
-                <img class="block-1-img" src="img/figure/figure1.png" alt="art moderne">
-                <div class="home">
-                    <h1 class="home-text-1">Bonjour, je suis Gino Castagna</h1>
-                    <div class="profil-picture-container">
-                        <img class="profil-picture" src="img/profil/profil.png" alt="Photo de profil">
+        <section id="home">
+            <div class="center">
+                <img class="figure-1" src="img/figure/figure1.png" alt="art moderne">
+                <div class="card card__home">
+                    <h1 class="text">Bonjour, je suis Gino Castagna</h1>
+                    <div class="center">
+                        <img class="margin-top" src="img/profil/profil.png" alt="Photo de profil">
                     </div>
-                    <p class="me left"> J'ai réalisé une formation professionnalisante de développeur web chez OpenClassrooms que j'ai
+                    <p class="text margin-top"> J'ai réalisé une formation professionnalisante de développeur web chez OpenClassrooms que j'ai
                         réussie grâce à mon sérieux, mon autonomie, ma créativité ainsi que mon envie d'apprendre et de
                         progresser.
                     </p>
-                    <p class="me right">
+                    <p class="text margin-top">
                         Aujourd'hui je maitrise différents langages de programmations: HTML5, CSS3, SCCS,
                         JavaScript, Angular, NodeJs.
                     </p>
                 </div>
             </div>
         </section>
-        <section class="section-2" id="skills">
-            <div class="block-2">
-                <img class="block-2-img" src="img/figure/figure2.png" alt="art moderne">
-                <div class="skills">
-                    <h1 class="title">Skills</h1>
-                    <div class="skills__content">
+        <section id="skills">
+            <div class="center">
+                <img class="figure-2" src="img/figure/figure2.png" alt="art moderne">
+                <div class="card card__skills">
+                    <h1 class="text">Skills</h1>
+                    <div class="skills__content margin-top">
                         <div class="skills__info">
                             <img src="img/logo/html.png" alt="HTML Logo" class="img__skills bottom">
-                            <h3 class="skills__name">HTML</h3>
+                            <h3 class="text">HTML</h3>
                             <div class="skills__bar">
                                 <div class="progress" id="html"></div>
                             </div>
-                            <h3 class="skills__name">90%</h3>
+                            <h3 class="text">90%</h3>
                         </div>
                         <div class="skills__info">
                             <img src="img/logo/css.png" alt="CSS Logo" class="img__skills bottom">
-                            <h3 class="skills__name">CSS</h3>
+                            <h3 class="text">CSS</h3>
                             <div class="skills__bar">
                                 <div class="progress" id="css"></div>
                             </div>
-                            <h3 class="skills__name">90%</h3>
+                            <h3 class="text">90%</h3>
                         </div>
                         <div class="skills__info">
                             <img src="img/logo/angular.png" alt="Angular Logo" class="img__skills bottom">
-                            <h3 class="skills__name">Angular</h3>
+                            <h3 class="text">Angular</h3>
                             <div class="skills__bar">
                                 <div class="progress" id="angular"></div>
                             </div>
-                            <h3 class="skills__name">80%</h3>
+                            <h3 class="text">80%</h3>
                         </div>
                         <div class="skills__info">
                             <img src="img/logo/javascript.png" alt="JavaScript Logo" class="img__skills bottom">
-                            <h3 class="skills__name">JavaScript</h3>
+                            <h3 class="text">JavaScript</h3>
                             <div class="skills__bar">
                                 <div class="progress" id="javascript"></div>
                             </div>
-                            <h3 class="skills__name">75%</h3>
+                            <h3 class="text">75%</h3>
                         </div>
                         <div class="skills__info">
                             <img src="img/logo/mongodb.png" alt="MongoDB Logo" class="img__skills bottom">
-                            <h3 class="skills__name">MongoDB</h3>
+                            <h3 class="text">MongoDB</h3>
                             <div class="skills__bar">
                                 <div class="progress" id="mongodb"></div>
                             </div>
-                            <h3 class="skills__name">85%</h3>
+                            <h3 class="text">85%</h3>
                         </div>
                         <div class="skills__info">
                             <img src="img/logo/git.png" alt="Git Logo" class="img__skills bottom">
-                            <h3 class="skills__name">Git</h3>
+                            <h3 class="text">Git</h3>
                             <div class="skills__bar">
                                 <div class="progress" id="git"></div>
                             </div>
-                            <h3 class="skills__name">60%</h3>
+                            <h3 class="text">60%</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-3" id="projects">
-            <div class="block-3">
-                <img class="block-3-img" src="img/figure/figure3.png" alt="art moderne">
-                <div class="projects">
-                    <h1 class="title2">Projets</h1>
+        <section id="projects">
+            <div class="center">
+                <img class="figure-3" src="img/figure/figure3.png" alt="art moderne">
+                <div class="card card__projects">
+                    <h1 class="text">Projets</h1>
                     <div class="projects__container swiper">
                         <div class="swiper-wrapper">
                             <div class="projects__content swiper-slide">
-                                <span class="projects__title">Booki</span>
+                                <h3 class="text">Booki</h3>
                                 <img src="img/projects/project-1.png" alt="Project Booki" class="projects__img">
-                                <h3 class="projects__subtitle">Transformer une maquette en site web avec HTML et CSS
+                                <h3 class="projects__subtitle text">Transformer une maquette en site web avec HTML et CSS
                                 </h3>
                             </div>
                             <div class="projects__content swiper-slide">
-                                <span class="projects__title">OhMyFood</span>
+                                <h3 class="text">OhMyFood</h3>
                                 <img src="img/projects/project-2.png" alt="Project Booki" class="projects__img">
-                                <h3 class="projects__subtitle">Dynamiser une page web avec des animations CSS</h3>
+                                <h3 class="projects__subtitle text">Dynamiser une page web avec des animations CSS</h3>
                             </div>
                             <div class="projects__content swiper-slide">
-                                <span class="projects__title">La Panthère</span>
+                                <h3 class="text">La Panthère</h3>
                                 <img src="img/projects/project-3.png" alt="Project Booki" class="projects__img">
-                                <h3 class="projects__subtitle">Optimiser un site web existant</h3>
+                                <h3 class="projects__subtitle text">Optimiser un site web existant</h3>
                             </div>
                             <div class="projects__content swiper-slide">
-                                <span class="projects__title">Kanap</span>
+                                <h3 class="text">Kanap</h3>
                                 <img src="img/projects/project-4.png" alt="Project Booki" class="projects__img">
-                                <h3 class="projects__subtitle">Construire un site e-commerce en JavaScript</h3>
+                                <h3 class="projects__subtitle text">Construire un site e-commerce en JavaScript</h3>
                             </div>
                             <div class="projects__content swiper-slide">
-                                <span class="projects__title">HotTakes</span>
+                                <h3 class="text">HotTakes</h3>
                                 <img src="img/projects/project-5.png" alt="Project Booki" class="projects__img">
-                                <h3 class="projects__subtitle">Construire une API sécurisée pour une application d'avis
+                                <h3 class="projects__subtitle text">Construire une API sécurisée pour une application d'avis
                                     gastronomique</h3>
                             </div>
                             <div class="projects__content swiper-slide">
-                                <span class="projects__title">Groupomania</span>
+                                <h3 class="text">Groupomania</h3>
                                 <img src="img/projects/project-6.png" alt="Project Booki" class="projects__img">
-                                <h3 class="projects__subtitle">Créer un réseau social d'entreprise</h3>
+                                <h3 class="projects__subtitle text">Créer un réseau social d'entreprise</h3>
                             </div>
                         </div>
                         <div class="swiper-button-next">
@@ -181,7 +181,7 @@
                                 style="transform: rotate(-90deg);width:50px;height:50px" colors="primary:#121331">
                             </lord-icon>
                         </div>
-                        <div class="swipe">
+                        <div class="swiper-icon">
                            <lord-icon src="https://cdn.lordicon.com/qazwzcae.json" trigger="loop" delay="2000" colors="primary:#121331"></lord-icon> 
                         </div>
                         <div class="swiper-pagination"></div>
@@ -189,11 +189,11 @@
                 </div>
             </div>
         </section>
-        <section class="section-4" id="contact">
-            <div class="block-4">
-                <img class="block-4-img" src="img/figure/figure4.png" alt="art moderne">
-                <div class="contact">
-                    <h1 class="title">Cont<lord-icon src="https://cdn.lordicon.com/diihvcfp.json" trigger="loop"
+        <section id="contact">
+            <div class="center">
+                <img class="figure-4" src="img/figure/figure4.png" alt="art moderne">
+                <div class="card card__contact">
+                    <h1 class="text">Cont<lord-icon src="https://cdn.lordicon.com/diihvcfp.json" trigger="loop"
                             delay="1000" colors="primary:#121331" style="padding-top: 4px;"></lord-icon>ctez Moi</h1>
                     <div class="contact__content">
                         <form action="" class="contact__form" id="contact-form">
@@ -208,25 +208,25 @@
                                 <i class="textarea"></i>
                             </div>
                             <div class="center">
-                                <button type="submit" class="button">
+                                <button type="submit" class="button center margin-top">
                                     <span>
-                                        <img src="img/icon/icon-send.png" alt="" class="icon">
+                                        <img src="img/icon/icon-send.png" alt="" class="social__icon">
                                     </span>
-                                    <span class="send">Envoyer</span>
+                                    <span class="button__effect text">Envoyer</span>
                                 </button>
                             </div>
                             <div class="social">
-                                <a href="https://www.linkedin.com/in/gino-castagna" class="button2 left">
+                                <a href="https://www.linkedin.com/in/gino-castagna" class="button-2 center margin-top">
                                     <span>
-                                        <img src="img/icon/icon-linkedin.png" alt="" class="icon">
+                                        <img src="img/icon/icon-linkedin.png" alt="" class="social__icon">
                                     </span>
-                                    <span class="send">LinkedIn</span>
+                                    <span class="button__effect text">LinkedIn</span>
                                 </a>
-                                <a href="https://github.com/gino53" class="button2 right">
+                                <a href="https://github.com/gino53" class="button-2 center margin-top">
                                     <span>
-                                        <img src="img/icon/icon-github.png" alt="" class="icon">
+                                        <img src="img/icon/icon-github.png" alt="" class="social__icon">
                                     </span>
-                                    <span class="send">GitHub</span>
+                                    <span class="button__effect text">GitHub</span>
                                 </a>
                             </div>
                         </form>
