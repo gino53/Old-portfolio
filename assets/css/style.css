@@ -516,12 +516,12 @@ h1 {
 
 .contact__form__input input:valid~span,
 .contact__form__input input:focus~span {
-    transform: translateY(32px) translateX(-240px);
+    transform: translateY(32px) translateX(-255px);
 }
 
 .contact__form__input textarea:valid~span,
 .contact__form__input textarea:focus~span {
-    transform: translateY(32px) translateX(-230px);
+    transform: translateY(32px) translateX(-245px);
 }
 
 .contact__form__input i,
