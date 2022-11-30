@@ -481,11 +481,11 @@ h1 {
     outline: none;
     background: transparent;
     color: #24242D;
-    font-size: 1.25rem;
-    z-index: 2;
-    cursor: none;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+    font-size: 1.25rem;
+    cursor: none;
+    z-index: 2;
 }
 
 .contact__form__input textarea {
@@ -497,23 +497,21 @@ h1 {
     outline: none;
     background: transparent;
     color: #24242D;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
     font-size: 1.25rem;
-    z-index: 2;
     cursor: none;
     resize: none;
+    z-index: 2;
 }
 
 .contact__form__input span {
     position: absolute;
     bottom: 0;
-    left: 0;
     padding: 10px 0;
-    pointer-events: none;
     font-size: 1em;
+    pointer-events: none;
     transition: 0.5s;
-    color: #24242D;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
 }
 
 .contact__form__input input:valid~span,
