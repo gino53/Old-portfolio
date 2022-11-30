@@ -64,9 +64,9 @@ const contactForm = document.getElementById('contact-form'),
 const sendEmail = (e) => {
 	e.preventDefault();
 
-	if(contactEmail.value === '' || contactMessage.value === '') {
+	if (contactEmail.value === '' || contactMessage.value === '') {
 	} else {
-		emailjs.sendForm('service_3tw347m','template_86ar4oz', '#contact-form', 'U4Gw4uXEQulSdIF4g')
+		emailjs.sendForm('service_3tw347m', 'template_86ar4oz', '#contact-form', 'U4Gw4uXEQulSdIF4g')
 			.then(() => {
 				contactAlert.textContent = 'Message sent';
 

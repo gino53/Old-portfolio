@@ -125,13 +125,17 @@ h1 {
 
 /*=============== SECTION ===============*/
 
-.figure-1, .figure-2, .figure-3, .figure-4 {
+.figure-1,
+.figure-2,
+.figure-3,
+.figure-4 {
     position: absolute;
     width: 1200px;
     z-index: -1;
 }
 
-.figure-1, .figure-4 {
+.figure-1,
+.figure-4 {
     margin-top: 300px;
 }
 
@@ -571,7 +575,8 @@ h1 {
     transition-delay: 0.25s;
 }
 
-.button, .button-2 {
+.button,
+.button-2 {
     position: relative;
     width: 2.5rem;
     height: 2.5rem;
@@ -602,7 +607,8 @@ h1 {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
 }
 
-.button::before, .button-2::before {
+.button::before,
+.button-2::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -612,11 +618,13 @@ h1 {
     transition: 0.5s;
 }
 
-.button:hover::before, .button-2:hover::before {
+.button:hover::before,
+.button-2:hover::before {
     opacity: 1;
 }
 
-.button::after, .button-2::after {
+.button::after,
+.button-2::after {
     content: '';
     position: absolute;
     top: 10px;
@@ -630,20 +638,24 @@ h1 {
     opacity: 0;
 }
 
-.button:hover::after, .button-2:hover::after {
+.button:hover::after,
+.button-2:hover::after {
     opacity: 0.5;
 }
 
-.button:hover .social__icon, .button-2:hover .social__icon {
+.button:hover .social__icon,
+.button-2:hover .social__icon {
     transform: scale(0);
     transition-delay: 0s;
 }
 
-.button span, .button-2 span {
+.button span,
+.button-2 span {
     position: absolute;
 }
 
-.button .button__effect, .button-2 .button__effect {
+.button .button__effect,
+.button-2 .button__effect {
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -653,7 +665,8 @@ h1 {
     transition-delay: 0s;
 }
 
-.button:hover .button__effect, .button-2:hover .button__effect {
+.button:hover .button__effect,
+.button-2:hover .button__effect {
     transform: scale(1);
     transition-delay: 0.25s;
 }
