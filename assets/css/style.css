@@ -23,10 +23,6 @@ a {
     cursor: none;
 }
 
-section {
-    height: 100vh;
-}
-
 h1 {
     font-size: 30px;
 }
@@ -46,6 +42,11 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.size100 {
+    width: 100%;
+    height: 100%;
 }
 
 .cursor {
@@ -125,6 +126,15 @@ h1 {
 
 /*=============== SECTION ===============*/
 
+section {
+    height: 100vh;
+    margin-bottom: 500px;
+}
+
+#contact {
+    margin-bottom: 0;
+}
+
 .figure-1,
 .figure-2,
 .figure-3,
@@ -132,19 +142,6 @@ h1 {
     position: absolute;
     width: 1200px;
     z-index: -1;
-}
-
-.figure-1,
-.figure-4 {
-    margin-top: 300px;
-}
-
-.figure-2 {
-    margin-top: 350px;
-}
-
-.figure-3 {
-    margin-top: 200px;
 }
 
 .card {
@@ -159,16 +156,12 @@ h1 {
 }
 
 .card__home {
-    position: relative;
-    top: 300px;
     width: 540px;
     height: auto;
     padding: 2rem;
 }
 
 .card__skills {
-    position: relative;
-    top: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -178,16 +171,12 @@ h1 {
 }
 
 .card__projects {
-    position: relative;
-    top: 200px;
     width: 620px;
     height: 750px;
     padding: 2rem 1.5rem;
 }
 
 .card__contact {
-    position: relative;
-    top: 300px;
     width: 620px;
     height: 670px;
     padding: 2rem;
@@ -673,16 +662,25 @@ h1 {
 
 @media screen and (max-width: 768px) {
 
+    .nav__menu {
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .nav__menu:hover {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    .card {
+        margin-top: 0;
+    }
+
     .card__home {
         width: 70%;
     }
 
-    .figure-2 {
-        margin-top: 200px;
-    }
-
     .card__skills {
-        top: 250px;
         display: flex;
         justify-content: space-around;
         align-items: center;
